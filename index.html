@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Color-Names</title>
+  <script src="js/angular.min.js"></script>
+  <script src="app.js"></script>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="rainbow.png">
+</head>
+<body class="body" ng-controller="myCtrl">
+
+  <div class="wrapper">
+    <div class="container">
+      <h2 class="text-center rainbow">Color-Names</h2>
+      <div class="colors">
+
+
+        <div class="hr"></div>
+        <div class="row">
+
+          <div ng-repeat="x in colors" class="box col-md-3 col-sm-6" style="background:{{x.Name}}">
+            <span class="inner-text" id="{{x.Id}}">{{x.Name}}</span>
+          </div>
+
+        </div>
+
+
+      </div>
+
+    </div> <!-- /.container -->
+  </div> <!-- /.wrapper-->
+
+  <script src="js/jquery.min.js" charset="utf-8"></script>
+  <script src="script.js"></script>
+</body>
+</html>
